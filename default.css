@@ -1,13 +1,24 @@
-h1 {
-    /* 우리는 제목에 색상을 빨간색으로 합니다. */
-    color : #03d6c7;
-    text-align: center
+body {
+    background: #f4f4f4;
+    font-family: arial, sans-serif;
+    line-height: 1.5em;
 }
 
-body{
+#container {
+    border: 1px #cccccc solid;
+    padding: 0 10px 0 10px;
+    width: 800px;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+.highlight {
     color: red;
-    height: 50vh;
-    background-color: #000;
-    background-image: url('https://cdn.discordapp.com/attachments/1083310003055767642/1111161877578383381/background.jpg')
-    background-position: center center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.left-side {
+    float: left;
+    width: 50%;
 }
