@@ -1,0 +1,13 @@
+h1 {
+    /* 우리는 제목에 색상을 빨간색으로 합니다. */
+    color : #03d6c7;
+    text-align: center
+}
+
+body{
+    color: red;
+    height: 50vh;
+    background-color: #000;
+    background-image: url('https://cdn.discordapp.com/attachments/1083310003055767642/1111161877578383381/background.jpg')
+    background-position: center center;
+}
