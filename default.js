@@ -1,33 +1,43 @@
-var num1 = parseFloat(prompt("첫번째 숫자 입력 : "));
-var num2 = parseFloat(prompt("두번째 숫자 입력 : "));
+var letter = prompt("Enter a letter : ");
 
-if(num1 > num2) {
-    console.log("큰 수는 num1 : " + num1);
+letter = letter.toLowerCase();
+
+if(letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u" ) {
+    console.log("Vowel");
+} else {
+    console.log("Consonant");
 }
 
-if(num1 < num2) {
-    console.log("큰 수는 num2 : " + num2);
-}
-
-if(num1 == num2) {
-    console.log("값이 동일합니다");
-}
-
-if(num1 > num2){
-    console.log("큰 수 num1: " + num1);
-} else if (num1 < num2) {
-    console.log("큰 수 num2: " + num2);
-} else if (num1 == num2) {
-    console.log("값이 동일합니다");
-}
-
-if(num1 > num2){
-    console.log("큰 수 num1: " + num1);
-} else if (num1 < num2) {
-    console.log("큰 수 num2: " + num2);
-} else (num1 == num2) {
-    console.log("값이 동일합니다");
-}
+//var num1 = parseFloat(prompt("첫번째 숫자 입력 : "));
+//var num2 = parseFloat(prompt("두번째 숫자 입력 : "));
+//
+//if(num1 > num2) {
+//    console.log("큰 수는 num1 : " + num1);
+//}
+//
+//if(num1 < num2) {
+//    console.log("큰 수는 num2 : " + num2);
+//}
+//
+//if(num1 == num2) {
+//    console.log("값이 동일합니다");
+//}
+//
+//if(num1 > num2){
+//    console.log("큰 수 num1: " + num1);
+//} else if (num1 < num2) {
+//    console.log("큰 수 num2: " + num2);
+//} else if (num1 == num2) {
+//    console.log("값이 동일합니다");
+//}
+//
+//if(num1 > num2){
+//    console.log("큰 수 num1: " + num1);
+//} else if (num1 < num2) {
+//    console.log("큰 수 num2: " + num2);
+//} else (num1 == num2) {
+//    console.log("값이 동일합니다");
+//}
 
 //var num1 = 20;
 //var num2 = 10;
