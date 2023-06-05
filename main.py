@@ -1,4 +1,15 @@
 #명시적 타입 변환
+n5 = ("Kim", "Bae", "Park", "Lee")
+vn5 = list(n5)
+
+print(n5, type(n5))
+print(vn5, type(vn5))
+
+n5 = "멋쟁이 사자"
+vn5 = tuple(n5)
+
+print(vn5, type(vn5))
+
 a = 5
 b = 2
 value = a / b
@@ -13,6 +24,16 @@ r = q + int(u)
 s = str(q) + u
 print(r, type(r))
 print(s, type(s))
+
+n1 = 10.36
+vn1 = int(n1)
+
+print(vn1, type(vn1))
+
+n1 = 10
+vn1 = complex(n1)
+
+print(vn1, type(vn1))
 
 #암시적 타입 변환
 a = 5
