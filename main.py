@@ -1,3 +1,14 @@
+#멤버 in 연산자
+
+st1 = "Welcome to 멋사"
+print("to" in st1)
+
+st2 = "Welcome 멋사"
+print("to" in st2)
+
+st3 = "Welcome todo 멋사"
+print("to" in st3)
+
 # 비트 연산자
 a = 10
 b = 15
