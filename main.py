@@ -30,6 +30,18 @@ print('a // b: ', a // b)
 a = -5
 print('a // b(음수) :', a // b)
 
+# 비교 연산자
+a = 5
+b = 2
+print('a < b: ', a < b)
+
+print('a <= b: ', a <= b)
+
+print('a == b: ', a == b)
+
+print('a != b: ', a != b)
+
+
 # 변수 선언 (2교시)
 a = 10
 b = 3.14
