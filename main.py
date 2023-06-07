@@ -1,13 +1,66 @@
-# name = input()
-#
-# print(name)
-#
-# name = input("Your Name: ")
+# 예제 1: 간단한 if 문
+x = 5
+if x > 3:
+    print("x는 3보다 큽니다.")
+
+# if else
+age = 18
+if age >= 18:
+    print("성인입니다")
+else:
+    print("미성년자입니다.")
+
+# 중첩된 if else
+score = 50
+if score >= 90:
+    print("A 학점")
+else:
+    if score >= 80:
+        print("B 학점")
+    else:
+        if score >=70:
+            print("C 학점")
+        else:
+            print("D 학점")
+
+# 예제 4: if elif
+marks = 75
+if marks >= 90:
+    print("A 등급")
+elif marks >= 80:
+    print("B 등급")
+elif marks >= 70:
+    print("C 등급")
+else:
+    print("D 등급")
+
+a = int(input("Enter Number Hreater then 2:"))
+if a >= 2:
+    print("Correct!! You have Entered: ", a)
+else:
+    print("Wrong!! You have Entered:", a)
+
+day = input("요일을 입력하세요: ")
+if day == "Mon":
+    print("오늘은 월요일")
+elif day == "Tue":
+    print("화요일")
+elif day == "Wed":
+    print("수요일")
+else:
+    print("휴일")
+
+
+name = input()
+
+print(name)
+
+name = input("Your Name: ")
 mobile = input("Enter Your Mobile Number:")
 mb = int(mobile)
 print(mb, type(mb))
 
-#print(mb, type(mb))
+print(mb, type(mb))
 
 price = int(input("Total Price:"))
 
@@ -39,13 +92,13 @@ print("My name is", name, "and My age is", age, sep=' ')
 
 
 
-#줄바꿈 없이 출력
+# 줄바꿈 없이 출력
 print("1")
 print("2", end='')
 print("3")
 print("4")
 
-#명시적 타입 변환
+# 명시적 타입 변환
 n5 = ("Kim", "Bae", "Park", "Lee")
 vn5 = list(n5)
 
@@ -82,7 +135,7 @@ vn1 = complex(n1)
 
 print(vn1, type(vn1))
 
-#암시적 타입 변환
+# 암시적 타입 변환
 a = 5
 b = 2
 print(b, type(b))
