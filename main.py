@@ -1,25 +1,29 @@
-i = 0
+fruits = ["apple", "banana", "cherry", "orange"]
 
-def myfun():
-    b = i + 1
-    print("My Function i:", i)
-    print("My Function i:", b)
+print(fruits)
 
-myfun()
+fruits.append("grape")
 
-a = 50
-def show():
-    a = 10
-    print("show-A: ", a)
+print(fruits)
 
-show()
-print("A :", a)
+fruits.insert(2, "kiwi")
 
-def show2():
-    global a
-    print("show2: ", a)
-    a = 20
-    print("show2-A2: ", a)
+print(fruits)
 
-show2()
-print("A: ", a)
+print(fruits.pop())
+print(fruits.pop(1))
+
+print(fruits)
+
+fruits.append("cherry")
+print(fruits)
+
+print(fruits.index("cherry"))
+print(fruits.remove("cherry")) #remove는 중복된 값이 있다면 하나만 지운다
+print(fruits.index("cherry"))
+print(fruits.remove("cherry"))
+# print(fruits.index("cherry"))
+
+fruits.reverse()
+
+print(fruits)
