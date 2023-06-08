@@ -1,25 +1,28 @@
-# Example 1
-def add(x, y):
-    z = x + y
-    print("Addition: ", z)
+def show():
+    x = 10
+    print(x)
 
-add(5, 2)
+show()
 
-# Example
-def add(*num):
-    z = num[0] + num[1] + num[2]
-    print("Addtion *: ", z)
+def add(y):
+    x = 10
+    print(x)
+    print(x+y)
 
-add(5,2,4)
+add(20)
 
-def add(x, *num):
-    z = x + num[0] + num[1]
-    print("Addtion x *: ", z)
+a = 50
+def show():
+    x = 10
+    print(x) # local
+    print(a) # global
 
-add(5,2,4)
+show()
 
-def add(**num):
-    z = num['a'] + num['b'] + num['c']
-    print('Addtion: ', z)
-
-add(a=5, b=2, c=4, d=5)
+print("Gobal Variable a:", a)
+i = 0
+def myfun():
+    a = i + 1
+    print("My Function a:", a)
+myfun()
+print("Gobal Variable a:", a)
