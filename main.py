@@ -1,14 +1,25 @@
-def pw(x, y):
-    z = x ** y
-    print(z)
+# Example 1
+def add(x, y):
+    z = x + y
+    print("Addition: ", z)
 
-pw(2, 5)
-# pw(5, 2, 3) 2개의 값을 입력 받아야하는데 3개를 받아서 error
+add(5, 2)
 
-def show(name, age=27):
-    print(f"Name: {name} Age:{age}")
+# Example
+def add(*num):
+    z = num[0] + num[1] + num[2]
+    print("Addtion *: ", z)
 
-show(name="멋쟁이사자", age=42)
+add(5,2,4)
 
-show(name="멋쟁이사자")
+def add(x, *num):
+    z = x + num[0] + num[1]
+    print("Addtion x *: ", z)
 
+add(5,2,4)
+
+def add(**num):
+    z = num['a'] + num['b'] + num['c']
+    print('Addtion: ', z)
+
+add(a=5, b=2, c=4, d=5)
