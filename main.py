@@ -1,12 +1,18 @@
-import sys
-print("default:", sys.getrecursionlimit())
-sys.setrecursionlimit(3000)
-print("setting:", sys.getrecursionlimit())
-i = 0
-def myfun():
-    global i
-    i += 1
-    print("My Function:", i)
-    myfun()
+from array import *
 
-myfun()
+
+def show(ar):
+    print("Passed Array ar:", ar)
+    print(type(ar))
+    for i in ar:
+        print(i)
+    return ar
+
+
+print("=====")
+a = array('i', [101, 102, 103, 104])
+y = show(a)
+print("Return Array Y:", y)
+print(type(y))
+for i in y:
+    print(i)
