@@ -1,12 +1,25 @@
-words = ['apple', 'bat', 'bar', 'atom', 'book']
-by_letters = {}
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+}
 
-for word in words:
-    letter = word[0]
-    if letter not in by_letters:
-        by_letters[letter] = [word]
-    else:
-        by_letters[letter].append(word)
+visited = set()
 
-print(by_letters)
-print(by_letters['c']) # KeyError!
+
+def dfs_iterative(start_node):
+    stack = [start_node]
+
+    while stack:
+        node = stack.pop()
+        if node not in visited:
+            print(node, end=' ')
+            visited.add(node)
+            stack.extend(reversed(graph[node]))
+
+
+snode = 'A'
+dfs_iterative(snode)
