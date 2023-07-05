@@ -1,4 +1,6 @@
 # 생성
+from random import random
+
 menu = {"짜장" : 4000, "짬뽕" : 5000, "탕수육" : 9000}
 
 #추가
